@@ -1,0 +1,27 @@
+{
+  "name": "agent-notary",
+  "version": "1.0.0",
+  "description": "Fully on-chain timestamp notary for AI agents",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "node scripts/compile.cjs",
+    "notary": "node src/cli.js",
+    "deploy": "node scripts/deploy.js",
+    "register": "node scripts/register.js",
+    "demo:chain": "hardhat node",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "viem": "^2.57.7"
+  },
+  "devDependencies": {
+    "hardhat": "^3.19.0",
+    "solc": "^0.8.24"
+  },
+  "type": "module"
+}
